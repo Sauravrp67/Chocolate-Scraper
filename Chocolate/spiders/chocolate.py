@@ -18,8 +18,8 @@ class chocolateSpider(scrapy.Spider):
             chocolate_url = 'https://www.chocolate.co.uk/' + relative_url
 
             yield response.follow(chocolate_url, callback = self.page_parse)
-
-        next_category_link = ''
+        
+        next_category_relative_link = 
 
         yield response.follow(next_category_link, callback = self.parse)
 
