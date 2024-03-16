@@ -13,7 +13,8 @@ class ChocolateItem(scrapy.Item):
 class ChocolateItem(scrapy.Item):
     url = scrapy.Field()
     category = scrapy.Field()
+    name = scrapy.Field()
     description = scrapy.Field()
     price = scrapy.Field()
+    weight = scrapy.Field()
 
-    
